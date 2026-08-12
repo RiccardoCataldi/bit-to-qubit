@@ -7,7 +7,7 @@ Hands-on lab for building and testing computation primitives — classical digit
 | Track | Path | Stack |
 |-------|------|--------|
 | Classical (Nand2Tetris) | `classical/nand2tetris/` | Verilog + testbenches |
-| Quantum (Qiskit) | `quantum/qiskit/` | Python + Qiskit + pytest |
+| Quantum (Qiskit) | `quantum/` | Python + Qiskit + pytest |
 
 Same learning contract on both sides: **implement a block → compose it → verify it**.
 
@@ -23,7 +23,7 @@ classical/nand2tetris/
 ### Quantum
 
 ```text
-quantum/qiskit/
+quantum/
   01_gates/    # X, H, Z, CNOT, …
 ```
 
@@ -31,7 +31,7 @@ quantum/qiskit/
 cd quantum
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-pytest qiskit/
+pytest 01_gates/
 ```
 
 ## Parallel map
