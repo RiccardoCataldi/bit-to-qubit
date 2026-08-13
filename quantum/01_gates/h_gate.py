@@ -1,7 +1,6 @@
 from qiskit import QuantumCircuit
 
 
-def x_gate():
+def h_gate():
     qc = QuantumCircuit(1)
-    qc.x(0)
     return qc
